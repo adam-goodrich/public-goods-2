@@ -37,10 +37,10 @@ const get5Facts = () => {
       const factsContainer = document.querySelector(".facts-container");
       factsContainer.innerHTML = "";
       facts.forEach((fact) => {
-        const factDiv = document.createElement("div");
+        const factDiv = document.createElement("ul");
         factDiv.classList.add("fact");
         factDiv.classList.add("list-group-item");
-        factDiv.innerHTML = `<p>${fact.text}</p>`;
+        factDiv.innerHTML = `<li>${fact.text}</li>`;
         factsContainer.appendChild(factDiv);
       });
     });
